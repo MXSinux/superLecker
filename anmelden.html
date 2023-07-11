@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Bites - Kraftvolle Rezepte für Superhelden-Genuss</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">
+                  <img src="./assets/image/logo2.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Start</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rezepte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nice</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="min-vh-100">
+        <!--https://getbootstrap.com/docs/4.0/components/forms/-->
+        <!--https://getbootstrap.com/docs/5.3/examples/modals/-->
+        <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5 h-100" tabindex="-1" role="dialog" id="modalSignin">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content rounded-4 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                </div>
+          
+                <div class="modal-body p-5 pt-0">
+                  <form class="needs-validation" novalidate method="" id="signin">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="user" placeholder="Username" required>
+                        <label for="user">Username</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com" required>
+                        <label for="email">Email address</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="password" placeholder="Password" required>
+                        <label for="password">Password</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"  type="submit">Sign up</button>
+                    <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                    <br>
+                    <small class="text-body-secondary">
+                        Hilfe bei der Anmeldung? 
+                        <!--Ein Button der als icon dargestellt wird. es soll aus dem Assets Ordner die info-circle.svg genommen werden-->
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="ri-information-line"></i>
+                        
+                    </small>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--https://getbootstrap.com/docs/5.2/components/modal/-->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Anmeldung Richtlinien</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Username:
+                    <br>
+                    Der Username muss länger als 5 Zeichen sein.
+                    <br>
+                    ....
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/hammer.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Bites - Kraftvolle Rezepte für Superhelden-Genuss</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">
+                  <img src="./assets/image/logo2.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Start</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Rezepte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nice</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="min-vh-100">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Lorem Ipsum</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          
+        </div>
+      </div>
+
+
+      <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+      <div class="card menu-item shadow-on-hover" style="width: 18rem;">
+        <img class="card-img-top" src="./assets/image/logo.png" alt="Card image cap">
+        <div class="card-body">
+          <span>Bewertung </span>
+          <span class="stars">
+            <!--https://remixicon.com/-->
+            
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-half-fill"></i>
+          </span>
+          <h5 class="mt-1 mb-2">Title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <!--https://www.youtube.com/watch?v=mRFabKuCpLE-->
+      <div class="rating">
+        <input  type="radio" name="star" id="star1"><label for="star1">
+        </label>
+        <input type="radio" name="star" id="star2"><label for="star2">
+        </label>
+        <input type="radio" name="star" id="star3"><label for="star3">
+        </label>
+        <input type="radio" name="star" id="star4"><label for="star4">
+        </label>
+        <input type="radio" name="star" id="star5"><label for="star5">
+        </label>
+      </div>
+
+    </main>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/hammer.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

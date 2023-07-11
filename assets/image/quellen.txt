@@ -1,0 +1,18 @@
+icon:
+https://pixabay.com/vectors/symbol-logo-icon-character-sign-3296661/
+
+logo:
+https://pixabay.com/illustrations/restaurant-chef-cook-sign-logo-3418134/
+
+vorspeisen:
+https://pixabay.com/photos/gourmet-food-bread-dish-bruschetta-5619887/
+
+hauptspeisen:
+https://pixabay.com/photos/meal-tomato-food-vegetables-2684005/
+
+nachtisch:
+https://pixabay.com/photos/pudding-vanilla-pudding-raspberries-1719860/
+
+info icon:
+https://icons.getbootstrap.com/icons/info-circle/
+
