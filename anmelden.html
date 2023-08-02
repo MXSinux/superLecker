@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mighty Bites - Kraftvolle Rezepte für Superhelden-Genuss</title>
+    <title>superLecker</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/remixicon.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">
-                  <img src="./assets/image/logo2.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
+                  <img src="./assets/image/icon.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">superLecker</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -37,15 +37,20 @@
                                 <a class="nav-link active" aria-current="page" href="#">Start</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Rezepte</a>
+                                <a class="nav-link" href="./bewertung.html">Bewertung</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nice</a>
+                              <li id="zeige-creator" style="display: none;">
+                                <a class="nav-link" href="./creator.html">Creator</a>
+                              </li>
+                              <li id="zeige-anmelden">
+                                <a class="nav-link" href="./anmelden.html">Anmelden</a>
+                              </li>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Dropdown
+                                    Rezepte
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -137,6 +142,7 @@
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/hammer.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/anmelden.js"></script>
 </body>
 
 </html>

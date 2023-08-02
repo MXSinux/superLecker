@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mighty Bites - Kraftvolle Rezepte für Superhelden-Genuss</title>
+    <title>superLecker</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/remixicon.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">
-                  <img src="./assets/image/logo2.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
+                  <img src="./assets/image/icon.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">superLecker</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -37,22 +37,25 @@
                                 <a class="nav-link active" aria-current="page" href="#">Start</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Rezepte</a>
+                                <a class="nav-link" href="./bewertung.html">Bewertung</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nice</a>
+                              <li id="zeige-creator" style="display: none;">
+                                <a class="nav-link" href="./creator.html">Creator</a>
+                              </li>
+                              <li id="zeige-anmelden">
+                                <a class="nav-link" href="./anmelden.html">Anmelden</a>
+                              </li>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Dropdown
+                                    Rezepte
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
+
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
@@ -64,6 +67,47 @@
     </header>
 
     <main class="min-vh-100">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./assets/image/icon.png" alt="" width="72" height="57">
+            <h2>Checkout form</h2>
+            <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+
+
+        <!--https://getbootstrap.com/docs/5.0/examples/checkout/-->
+        <div class="container">
+            <label class="m-1" for="text">Wie soll dein Rezept heißen?</label>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" placeholder="Text" >
+                <label for="text">Titel</label>
+            </div>
+        </div>
+
+        <div class="container">
+            <label class="m-1" for="text">Beschreibe kurz was dein Rezept ausmacht.</label>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" aria-label="With textarea" style="height: 108px;"></textarea>
+                <label for="text">Beschreibung</label>
+            </div>
+            <label for="text">Das sollten die anderen wissen!</label>
+            <div class="form-check form-switch pt-2">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Vegetarisch</label>
+              </div>
+              <div class="form-check form-switch pt-2">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Vegan</label>
+              </div>
+              <div class="form-check form-switch pt-2">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Laktosefrei</label>
+              </div>
+        </div>
+        
+        
+
+          
+
     </main>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/hammer.min.js"></script>
