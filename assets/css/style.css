@@ -218,3 +218,21 @@ main {
     height: 400px;
   }
 }
+
+/* Nav  Offcanvas backdrop fix  */
+
+@media only screen and (min-width: 991px) {
+  .offcanvas-backdrop{
+    display: none;
+  }
+}
+
+/* footer icon anpassen */
+
+@media only screen and (min-width: 991px) {
+  #footer-icon{
+    margin-left: 50px;  
+    margin-right: 50px;   
+    
+  }
+}

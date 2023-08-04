@@ -27,36 +27,41 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">superLecker</h5>
+                        <h5 class="offcanvas-title text-secondary" id="offcanvasNavbarLabel">superLecker</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body" id="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Start</a>
+                                <a class="nav-link" href="./index.html">Start</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./bewertung.html">Bewertung</a>
                             </li>
                             <li class="nav-item">
                               <li id="zeige-creator" style="display: none;">
-                                <a class="nav-link" href="./creator.html">Creator</a>
+                                <a class="nav-link active" aria-current="page" href="./creator.html">Creator</a>
                               </li>
                               <li id="zeige-anmelden">
                                 <a class="nav-link" href="./anmelden.html">Anmelden</a>
                               </li>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Rezepte
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu bg-secondary">
+                                    <li><a class="dropdown-item" href="./vorspeisen.html">Vorspeisen</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./hauptspeisen.html">Hauptspeisen</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./nachtisch.html">Nachtisch</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -67,48 +72,114 @@
     </header>
 
     <main class="min-vh-100">
-        <div class="py-5 text-center">
+        <div class="container py-5  text-center">
             <img class="d-block mx-auto mb-4" src="./assets/image/icon.png" alt="" width="72" height="57">
-            <h2>Checkout form</h2>
-            <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+            <h2 class="pb-4">Creator Dashboard</h2>
+            <!--Der Text wurde unter Verwendung von ChatGPT erstellt-->
+            <p class="lead">Hier kannst du kreativ werden und dein eigenes Rezept mit der Welt teilen.</p>
+            <p class="lead">In dem Formular hast du die Möglichkeit, den Titel deines Rezepts einzugeben, eine köstliche Beschreibung zu verfassen und ein ansprechendes Bild hinzuzufügen, das Lust aufs Kochen macht. Außerdem kannst du angeben, ob dein Rezept vegan, vegetarisch oder laktosefrei ist, damit andere Genießer leichter die passenden Gerichte für ihre Ernährungsbedürfnisse finden können.</p>
+            <p class="lead">Ganz einfach das Formular ausfüllen und schon bald könnte dein Rezept auf unserer Seite zu finden sein. Viel Spaß beim Kochen und Experimentieren!</p>
         </div>
 
 
         <!--https://getbootstrap.com/docs/5.0/examples/checkout/-->
-        <div class="container">
-            <label class="m-1" for="text">Wie soll dein Rezept heißen?</label>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control rounded-3" placeholder="Text" >
-                <label for="text">Titel</label>
+        <div class="container" id="creator">
+            <div class="container bg-primary py-1 ">
+                <label class="m-1" for="text">Wie soll dein Rezept heißen?</label>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control rounded-3" placeholder="Text" >
+                    <label for="text">Titel</label>
+                </div>
             </div>
-        </div>
+    
+            <div class="container bg-secondary py-1">
+                <label class="m-1" for="text">Beschreibe kurz was dein Rezept ausmacht.</label>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" aria-label="With textarea" style="height: 108px;"></textarea>
+                    <label for="text">Beschreibung</label>
+                </div>
+            </div>
+    
+            <div class="container py-1">
+                <label for="text">Das sollten die anderen wissen!</label>
+                <div class="form-check form-switch pt-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Vegetarisch</label>
+                  </div>
+                  <div class="form-check form-switch pt-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Vegan</label>
+                  </div>
+                  <div class="form-check form-switch pt-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Laktosefrei</label>
+                  </div>
+            </div>
+    
+            <div class="container py-1">
+                <div class="mb-3">
+                    <label for="text">Jetzt noch ein passendes Bild</label>
+                </div>
+                <div class="my-1">
+                    <input type="file" class="form-control" id="inputGroupFile01">
+                </div>
 
-        <div class="container">
-            <label class="m-1" for="text">Beschreibe kurz was dein Rezept ausmacht.</label>
-            <div class="form-floating mb-3">
-                <textarea class="form-control" aria-label="With textarea" style="height: 108px;"></textarea>
-                <label for="text">Beschreibung</label>
+                
             </div>
-            <label for="text">Das sollten die anderen wissen!</label>
-            <div class="form-check form-switch pt-2">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Vegetarisch</label>
-              </div>
-              <div class="form-check form-switch pt-2">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Vegan</label>
-              </div>
-              <div class="form-check form-switch pt-2">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Laktosefrei</label>
-              </div>
+            <div class="text-center py-4">
+                <button type="button" class="btn btn-secondary btn-lg btn-block w-100">Upload </button>
+            </div>
+            
         </div>
+        
         
         
 
           
 
     </main>
+    <!--https://getbootstrap.com/docs/5.2/examples/footers/-->
+    <footer class="py-3 mt-4 bg-primary">
+        <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/facebook.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/youtube.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/twitter.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/tiktok.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/instagram.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+  
+          
+        </ul>
+        <div class="text-center  py-1">
+          <p class="">© 2023 Linus Kiel, Some Rights Reserved</p>
+        </div>
+       
+  
+        <div class="text-center text-decoration-underline">
+          <a href="./impressum.html" class="nav-link px-2 text-muted">Impressum</a>
+        </div>
+        
+  
+      </footer>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/hammer.min.js"></script>
     <script src="./assets/js/main.js"></script>

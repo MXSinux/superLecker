@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./">
-                  <img src="./assets/image/logo2.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
+                  <img src="./assets/image/icon.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -27,33 +27,41 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <h5 class="offcanvas-title text-secondary" id="offcanvasNavbarLabel">superLecker</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body" id="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Start</a>
+                                <a class="nav-link" href="./index.html">Start</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Rezepte</a>
+                                <a class="nav-link active" aria-current="page" href="./bewertung.html">Bewertung</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nice</a>
+                              <li id="zeige-creator" style="display: none;">
+                                <a class="nav-link" href="./creator.html">Creator</a>
+                              </li>
+                              <li id="zeige-anmelden">
+                                <a class="nav-link" href="./anmelden.html">Anmelden</a>
+                              </li>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Dropdown
+                                    Rezepte
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <ul class="dropdown-menu bg-secondary">
+                                    <li><a class="dropdown-item" href="./vorspeisen.html">Vorspeisen</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="./hauptspeisen.html">Hauptspeisen</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./nachtisch.html">Nachtisch</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -65,6 +73,48 @@
 
     <main class="min-vh-100">
     </main>
+    <!--https://getbootstrap.com/docs/5.2/examples/footers/-->
+    <footer class="py-3 mt-4 bg-primary">
+        <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/facebook.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/youtube.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/twitter.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/tiktok.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/instagram.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+  
+          
+        </ul>
+        <div class="text-center  py-1">
+          <p class="">© 2023 Linus Kiel, Some Rights Reserved</p>
+        </div>
+       
+  
+        <div class="text-center text-decoration-underline">
+          <a href="./impressum.html" class="nav-link px-2 text-muted">Impressum</a>
+        </div>
+        
+  
+      </footer>
     <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/hammer.min.js"></script>
     <script src="./assets/js/main.js"></script>

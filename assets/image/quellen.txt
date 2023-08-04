@@ -16,3 +16,5 @@ https://pixabay.com/photos/pudding-vanilla-pudding-raspberries-1719860/
 info icon:
 https://icons.getbootstrap.com/icons/info-circle/
 
+facebook, twitter, youtube, tiktok, instagram icon:
+https://icons8.com/icon/set/social-media/ios-filled
