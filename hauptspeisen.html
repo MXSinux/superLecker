@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>superLecker</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">
+                  <img src="./assets/image/icon.png" alt="Website Icon" width="60" height="48" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-secondary" id="offcanvasNavbarLabel">superLecker</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" id="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Start</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./bewertung.html">Bewertung</a>
+                            </li>
+                            <li class="nav-item">
+                              <li id="zeige-creator" style="display: none;">
+                                <a class="nav-link" href="./creator.html">Creator</a>
+                              </li>
+                              <li id="zeige-anmelden">
+                                <a class="nav-link" href="./anmelden.html">Anmelden</a>
+                              </li>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Rezepte
+                                </a>
+                                <ul class="dropdown-menu bg-secondary">
+                                    <li><a class="dropdown-item" href="./vorspeisen.html">Vorspeisen</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./hauptspeisen.html">Hauptspeisen</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./nachtisch.html">Nachtisch</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                              <form class="form-inline d-flex">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-secondary mx-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="min-vh-100">
+      <!--https://getbootstrap.com/docs/5.3/examples/product/-->
+      <div class="position-relative overflow-hidden p-3 p-md-5  text-center bg-body-tertiary">
+        <div class="col-md-6 p-lg-5 mx-auto my-5">
+          <h1 class="display-3 fw-bold">Lorem ipsum</h1>
+          <h3 class="fw-normal text-muted mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h3>
+          
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+      <div class="bg-secondary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch ">
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg " >
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch ">
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg " >
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--https://getbootstrap.com/docs/5.3/examples/product/-->
+      <div class="position-relative overflow-hidden p-3 p-md-5  text-center bg-body-tertiary">
+        <div class="col-md-6 p-lg-5 mx-auto my-5">
+          <h1 class="display-3 fw-bold">Lorem ipsum</h1>
+          <h3 class="fw-normal text-muted mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
+          
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+      <div class="bg-secondary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch ">
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg " >
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch ">
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg " >
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="col py-3">
+              <!--https://www.youtube.com/watch?v=KRENd1sv3tE-->
+              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                <img class="card-img-top" src="./assets/image/placeholder.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <span>Bewertung </span>
+                  <span class="stars">
+                    <!--https://remixicon.com/-->
+                    
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                    <i class="ri-star-line"></i>
+                  </span>
+                  <h5 class="mt-1 mb-2">Lorem ipsum</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                  <div class="text-center"><a href="#" class="btn btn-primary">Go somewhere</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-3">
+        <div class="row text-center">
+          <div class="col-lg-4 py-3">
+            <img class="bd-placeholder-img card-img-top rounded-circle" src="./assets/image/placeholderKontakt.jpg" alt="Card image cap">
+            <h2 class="fw-normal">Heading</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 py-3">
+            <img class="bd-placeholder-img card-img-top rounded-circle" src="./assets/image/placeholderKontakt.jpg" alt="Card image cap">
+            <h1 class="fw-normal">Heading</h1>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 py-3">
+            <img class="bd-placeholder-img card-img-top rounded-circle" src="./assets/image/placeholderKontakt.jpg" alt="Card image cap">
+            <h2 class="fw-normal">Heading</h2>
+            <p>And lastly this, the third column of representative placeholder content.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </div>
+    </main>
+    <!--https://getbootstrap.com/docs/5.2/examples/footers/-->
+    <footer class="py-3 mt-4 bg-primary">
+        <ul class="nav justify-content-center border-bottom pb-2 mb-2">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/facebook.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/youtube.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/twitter.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/tiktok.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-white px-2" id="footer-icon">
+              <img src="./assets/image/instagram.png" alt="Website Icon" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+          </li>
+  
+          
+        </ul>
+        <div class="text-center  py-1">
+          <p class="">© 2023 Linus Kiel, Some Rights Reserved</p>
+        </div>
+       
+  
+        <div class="text-center text-decoration-underline">
+          <a href="./impressum.html" class="nav-link px-2 text-muted">Impressum</a>
+        </div>
+        
+  
+      </footer>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/hammer.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

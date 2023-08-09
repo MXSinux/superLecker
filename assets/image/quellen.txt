@@ -18,3 +18,9 @@ https://icons.getbootstrap.com/icons/info-circle/
 
 facebook, twitter, youtube, tiktok, instagram icon:
 https://icons8.com/icon/set/social-media/ios-filled
+
+placeholder:
+https://pixabay.com/de/photos/pasta-fettuccine-frische-pasta-1181189/
+
+placeholderKontakt:
+https://www.pexels.com/de-de/foto/mann-der-hinter-wand-lachelt-220453/
