@@ -232,12 +232,13 @@ main {
 /* footer icon anpassen */
 
 @media only screen and (min-width: 991px) {
-  #footer-icon{
+  #footer-icon .nav-item{
     margin-left: 50px;  
     margin-right: 50px;   
     
   }
 }
+
 
 /* Offcanvas anpassung ausrichtung */
 
@@ -272,3 +273,9 @@ modalSignin{
   font-size: 40px;
   display: flex;
 }
+
+#creator {
+  padding-left: 0;
+  padding-right: 0; 
+}
+
