@@ -261,3 +261,14 @@ main {
 modalSignin{
   height: 100%;;
 }
+
+
+
+.star-size{
+  font-size: 33px;
+}
+
+.buttonGroesse{
+  font-size: 40px;
+  display: flex;
+}

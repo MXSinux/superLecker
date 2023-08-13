@@ -24,3 +24,13 @@ https://pixabay.com/de/photos/pasta-fettuccine-frische-pasta-1181189/
 
 placeholderKontakt:
 https://www.pexels.com/de-de/foto/mann-der-hinter-wand-lachelt-220453/
+
+haehnchenburger:
+https://pixabay.com/de/photos/hamburger-sandwich-h%C3%A4hnchen-gesund-8026582/
+
+
+nudelauflauf:
+https://pixabay.com/de/photos/lasagne-k%C3%A4se-tomaten-nudeln-1900529/
+
+waffeln:
+https://pixabay.com/de/illustrations/waffeln-eierwaffeln-geb%C3%A4ck-dessert-2040278/

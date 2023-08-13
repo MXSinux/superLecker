@@ -67,6 +67,42 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 
 
+/*
+const stars = document.querySelectorAll(".star");
+
+        stars.forEach((star, index) => {
+            star.addEventListener("click", () => {
+                for (let i = 0; i <= index; i++) {
+                    stars[i].innerHTML = "&#9733;";
+                }
+                for (let i = index + 1; i < stars.length; i++) {
+                    stars[i].innerHTML = "&#9734;";
+                }
+            });
+        });
+
+*/
+
+        const cards = document.querySelectorAll(".recipe-card");
+
+        cards.forEach((card) => {
+            const stars = card.querySelectorAll(".star");
+            const cardId = card.getAttribute("data-card-id");
+        
+            stars.forEach((star, index) => {
+                star.addEventListener("click", () => {
+                    for (let i = 0; i <= index; i++) {
+                        stars[i].innerHTML = "&#9733;";
+                    }
+                    for (let i = index + 1; i < stars.length; i++) {
+                        stars[i].innerHTML = "&#9734;";
+                    }
+                });
+            });
+        });
+             
+
+
 
 
 
