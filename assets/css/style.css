@@ -185,7 +185,7 @@ main {
   text-shadow: 0 0 15px #F58d17;
 }
 
-/* Farbe Button */
+
 
 .btn-primary{
   --bs-btn-color: #000000;
@@ -279,3 +279,7 @@ modalSignin{
   padding-right: 0; 
 }
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
