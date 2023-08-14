@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>superLecker</title>
+    <title>Rezepte von Superhelden für Superhelden</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/remixicon.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -157,127 +157,167 @@
         </div>
       </div>
 
-      <div class="bg-primary">
-        <div class="container">
-          <div class="px-4 py-5  text-center">
-            <h1 class="display-5 fw-bold text-body-emphasis pb-3">Neusten Rezepte</h1>
-          </div>
-          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch ">
-            <div class="col py-3">
-              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg " >
-                <img class="card-img-top" src="./assets/image/haehnchenburger.jpg" alt="Card image cap">
-                <div class="card-body d-flex flex-column">       
-                  <span class="recipe-card" data-card-id="4">
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                  </span>
-                  <h5 class="mt-1 mb-2">Smokey BBQ Hähnchenburger</h5>
-                  <p class="card-text">Gegrillte Hähnchenbrust mit rauchiger BBQ-Soße, knusprigem Speck und frischem Gemüse.</p>
-                  <div class="text-center mt-auto justify-content-center"><a href="./hauptspeisen.html" class="btn btn-primary">Mehr davon</a></div>
+      <!--https://getbootstrap.com/docs/5.3/examples/features/-->
+      <div class="text-bg-dark">
+        <!--https://getbootstrap.com/docs/5.3/examples/features/-->
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Am häufigsten bewertetes Rezept</h2>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+              <img class="card-img-top" src="./assets/image/kaiserschmarrn.jpg" alt="Card image cap">
+              <div class="card-body d-flex flex-column">
+                <span>
+                  <span class="star-size">&#9733;</span>
+                  <span class="star-size">&#9733;</span>
+                  <span class="star-size">&#9733;</span>
+                  <span class="star-size">&#9733;</span>
+                  <span class="star-size">&#9733;</span>
+                </span>
+                <h5 class="mt-1 mb-2">Kaiserschmarrn</h5>
+                <p class="card-text">Kaiserschmarrn, luftig gebacken, begleitet von der Frische saftiger Johannisbeeren. Die Kombination aus süßem Teig und fruchtigem Aroma macht dieses Gericht zu einem köstlichen Gaumenschmaus.</p>
+                <div class="text-center mt-auto justify-content-center">
+                  <button class=" mb-2 btn rounded-3 btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Zum Rezept</button>
                 </div>
               </div>
             </div>
-            <div class="col py-3">
-              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
-                <img class="card-img-top" src="./assets/image/nudelauflauf.jpg" alt="Card image cap">
-                <div class="card-body d-flex flex-column">
-                  <span class="recipe-card" data-card-id="5">
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                  </span>
-                  <h5 class="mt-1 mb-2">Omas Herzhafter Nudelauflauf</h5>
-                  <p class="card-text">Klassischer Nudelauflauf mit zarter Pasta, cremiger Soße und goldbrauner Käsekruste.</p>
-                  <div class="text-center mt-auto justify-content-center"><a href="./hauptspeisen.html" class="btn btn-primary">Mehr davon</a></div>
+          </div>
+    
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  
                 </div>
-            </div>
-            </div>
-            <div class="col py-3">
-              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
-                <img class="card-img-top" src="./assets/image/waffeln.jpg" alt="Card image cap">
-                <div class="card-body d-flex flex-column">
-                  <span class="recipe-card" data-card-id="6">
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                  </span>
-                  <h5 class="mt-1 mb-2">Puderzuckerwaffeln</h5>
-                  <p class="card-text">Luftige Waffeln, zart bestäubt mit Puderzucker, ein süßes Vergnügen für jeden Moment.</p>
-                  <div class="text-center mt-auto justify-content-center"><a href="./nachtisch.html" class="btn btn-primary">Mehr davon</a></div>
+                <h4 class="fw-semibold mb-0 ">198 Bewertungen</h4>
+                <p class="">Dieses Rezept erhielt insgesamt 198 Bewertungen, davon 180 mit fünf Sternen, und ist somit das am meisten bewertete.</p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  
                 </div>
+                <h4 class="fw-semibold mb-0 ">Unser Superheld</h4>
+                <p class="">Der Benutzer "tomo17" stammt aus unserer Community und hat dieses Rezept zur Verfügung gestellt. </p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                  
+                </div>
+                <h4 class="fw-semibold mb-0 ">Veröffentlichung</h4>
+                <p class="">Dieses Rezept wurde am 01.01.2021 hochgeladen</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
+      
 
-      <div class="bg-secondary">
-        <div class="container">
-          <div class="px-4 py-5  text-center">
-            <h1 class="display-5 fw-bold text-body-emphasis pb-3">Höchste Bewertungen erhalten</h1>
-          </div>
-          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch ">
-            <div class="col py-3">
-              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg " >
-                <img class="card-img-top" src="./assets/image/haehnchenburger.jpg" alt="Card image cap">
-                <div class="card-body d-flex flex-column">       
-                  <span class="recipe-card" data-card-id="7">
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                  </span>
-                  <h5 class="mt-1 mb-2">Smokey BBQ Hähnchenburger</h5>
-                  <p class="card-text">Gegrillte Hähnchenbrust mit rauchiger BBQ-Soße, knusprigem Speck und frischem Gemüse.</p>
-                  <div class="text-center mt-auto justify-content-center"><a href="./hauptspeisen.html" class="btn btn-primary">Mehr davon</a></div>
-                </div>
+      <div class="bg-light">
+        <!--https://getbootstrap.com/docs/5.3/examples/features/-->
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Empfehlung dieser Woche</h2>
+          <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+              <div class="col">
+                  <div class="row row-cols-1 row-cols-sm-2 g-4">
+                      <div class="col d-flex flex-column gap-2">
+                          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          </div>
+                          <h4 class="fw-semibold mb-0 text-body-emphasis">56 Bewertungen</h4>
+                          <p class="text-body-secondary">Bisher wurde dieses Rezept bereits 56 Mal bewertet, wobei 38 Bewertungen mit fünf Sternen ausgezeichnet wurden.</p>
+                      </div>
+      
+                      <div class="col d-flex flex-column gap-2">
+                          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          </div>
+                          <h4 class="fw-semibold mb-0 text-body-emphasis">Unser Superheld</h4>
+                          <p class="text-body-secondary">Dieses Rezept wurde von dem Benutzer "Peters" veröffentlicht</p>
+                      </div>
+      
+                      <div class="col d-flex flex-column gap-2">
+                          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          </div>
+                          <h4 class="fw-semibold mb-0 text-body-emphasis">Veröffentlichung</h4>
+                          <p class="text-body-secondary">Dieses Rezept wurde vor 8 Tagen hochgeladen</p>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="col py-3">
-              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
-                <img class="card-img-top" src="./assets/image/nudelauflauf.jpg" alt="Card image cap">
-                <div class="card-body d-flex flex-column">
-                  <span class="recipe-card" data-card-id="8">
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                  </span>
-                  <h5 class="mt-1 mb-2">Omas Herzhafter Nudelauflauf</h5>
-                  <p class="card-text">Klassischer Nudelauflauf mit zarter Pasta, cremiger Soße und goldbrauner Käsekruste.</p>
-                  <div class="text-center mt-auto justify-content-center"><a href="./hauptspeisen.html" class="btn btn-primary">Mehr davon</a></div>
-                </div>
-            </div>
-            </div>
-            <div class="col py-3">
-              <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
-                <img class="card-img-top" src="./assets/image/waffeln.jpg" alt="Card image cap">
-                <div class="card-body d-flex flex-column">
-                  <span class="recipe-card" data-card-id="9">
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                    <span class="star star-size">&#9734;</span>
-                  </span>
-                  <h5 class="mt-1 mb-2">Puderzuckerwaffeln</h5>
-                  <p class="card-text">Luftige Waffeln, zart bestäubt mit Puderzucker, ein süßes Vergnügen für jeden Moment.</p>
-                  <div class="text-center mt-auto justify-content-center"><a href="./nachtisch.html" class="btn btn-primary">Mehr davon</a></div>
-                </div>
+      
+              <div class="col d-flex flex-column align-items-start gap-2">
+                  <div class="card menu-item shadow-on-hover card-cover h-100 overflow-hidden rounded-xl shadow-lg ">
+                      <img class="card-img-top" src="./assets/image/pizza.jpg" alt="Card image cap">
+                      <div class="card-body d-flex flex-column">
+                          <span>
+                              <span class="star-size">&#9733;</span>
+                              <span class="star-size">&#9733;</span>
+                              <span class="star-size">&#9733;</span>
+                              <span class="star-size">&#9733;</span>
+                              <span class="star-size">&#9734;</span>
+                          </span>
+                          <h5 class="mt-1 mb-2">Veggie Pizza</h5>
+                          <p class="card-text">Genießen Sie den Geschmack von hausgemachter Veggie Pizza. Saftige Tomaten, knusprige Paprika, zarte Pilze und frischer Spinat verleihen dieser Pizza einen gesunden und köstlichen Twist. Perfekt für eine ausgewogene Mahlzeit.</p>
+                          <div class="text-center mt-auto justify-content-center">
+                              <button class=" mb-2 btn rounded-3 btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Zum Rezept</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+
+
+       <!--https://getbootstrap.com/docs/5.2/components/modal/-->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Kaiserschmarrn</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5>Zutaten</h5>
+                <p>Rezept für 2 Personen: drei Eier, 150 g Mehl, 250 ml Milch, zwei Esslöffel Zucker, eine Prise Salz, 100 g frische Johannisbeeren und einen halben Teelöffel Vanilleextrakt.</p>
+                <h5>Zubereitung</h5>
+                <p>Die Eier trennen, das Eiweiß steif schlagen. Aus Eigelb, Mehl, Milch, Zucker, Salz und Vanille einen glatten Teig rühren. Den Eischnee vorsichtig unterheben. Den Teig in einer Pfanne goldbraun braten, die gewaschenen Johannisbeeren hinzufügen und kurz schmoren lassen. Den Schmarrn in Stücke zerteilen und servieren.</p>
+                <h5>Hinweise</h5>
+                <p>Die angegebene Menge ergibt 2 Portionen. Wenden Sie den Teig in der Pfanne nur einmal, um die luftige Konsistenz zu erhalten. Servieren Sie den Kaiserschmarrn mit Puderzucker bestreut, Johannisbeeren und vielleicht einer Kugel Vanilleeis für eine erfrischende Note.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        <!--https://getbootstrap.com/docs/5.2/components/modal/-->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabe" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabe">Veggie Pizza</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5>Zutaten</h5>
+                <p>Für diese köstliche Veggie Pizza benötigen Sie 1 Pizzateig (selbstgemacht oder gekauft), 1/2 Tasse Tomatensauce, 1 Tasse geriebenen Mozzarella-Käse, 1/2 rote Paprika (in Streifen geschnitten), 1/2 grüne Paprika (in Streifen geschnitten), 1/2 Tasse Pilzscheiben (z.B. Champignons), einen Handvoll frischen Spinat, 1/2 rote Zwiebel (in dünnen Ringen), eine Prise Salz und Pfeffer, eine Prise getrocknetes Oregano sowie Olivenöl.</p>
+                <h5>Zubereitung</h5>
+                <p>Den Pizzateig ausrollen und auf ein Backblech legen. Anschließend die Tomatensauce gleichmäßig auf dem Teig verteilen. Mit der Hälfte des geriebenen Mozzarella-Käses bestreuen. Die Paprikastreifen, Pilzscheiben, Spinat und Zwiebelringe auf der Pizza verteilen. Danach den restlichen Mozzarella-Käse darüber streuen. Die Pizza mit einer Prise Salz, Pfeffer und getrocknetem Oregano würzen. Einen Hauch Olivenöl über die Pizza geben. Im vorgeheizten Ofen bei 200°C (392°F) etwa 15-20 Minuten backen, bis der Käse geschmolzen und der Teig goldbraun ist.</p>
+                <h5>Hinweise</h5>
+                <p>Experimentieren Sie gerne mit anderen Gemüsesorten und Käsesorten nach Ihrem Geschmack. Servieren Sie die Veggie Pizza als Hauptgericht oder in mundgerechten Stücken als leckere Vorspeise</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+
+      
 
       
       

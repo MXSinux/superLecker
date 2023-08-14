@@ -34,3 +34,9 @@ https://pixabay.com/de/photos/lasagne-k%C3%A4se-tomaten-nudeln-1900529/
 
 waffeln:
 https://pixabay.com/de/illustrations/waffeln-eierwaffeln-geb%C3%A4ck-dessert-2040278/
+
+Kaiserschmarrn:
+https://pixabay.com/de/photos/kaiserschmarrn-dessert-lebensmittel-7274523/
+
+Pizza:
+https://pixabay.com/de/photos/pizza-ofen-restaurant-essen-lecker-6478478/
